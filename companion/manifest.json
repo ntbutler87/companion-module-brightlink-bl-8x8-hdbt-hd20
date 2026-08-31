@@ -1,28 +1,18 @@
 {
-	"id": "generic-http",
-	"name": "generic-http",
-	"shortname": "http",
-	"description": "generic-http",
-	"version": "0.0.0",
+	"$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
+	"type": "connection",
+	"id": "brightlink-bl_8x8_hdbt_hd20",
+	"name": "brightlink-bl_8x8_hdbt_hd20",
+	"shortname": "brightlink",
+	"description": "Control the BrightLink BL-8X8-HDBT-HD20 HDMI Matrix switcher over IP",
+	"version": "1.0.0",
 	"license": "MIT",
-	"repository": "git+https://github.com/bitfocus/companion-module-generic-http.git",
-	"bugs": "https://github.com/bitfocus/companion-module-generic-http/issues",
+	"repository": "git+https://github.com/bitfocus/companion-module-brightlink-bl_8x8_hdbt_hd20.git",
+	"bugs": "https://github.com/bitfocus/companion-module-brightlink-bl_8x8_hdbt_hd20/issues",
 	"maintainers": [
 		{
-			"name": "William Viker",
-			"email": "william@bitfocus.io"
-		},
-		{
-			"name": "Keith Rocheck",
-			"email": "keith.rocheck@gmail.com"
-		},
-		{
-			"name": "Jeffrey Davidsz",
-			"email": "jeffrey.davidsz@vicreo.eu"
-		},
-		{
-			"name": "Joseph Adams",
-			"email": "josephdadams@gmail.com"
+			"name": "Nathan Butler",
+			"email": "nbutlerimax@gmail.com"
 		}
 	],
 	"legacyIds": [],
@@ -32,12 +22,13 @@
 		"apiVersion": "0.0.0",
 		"entrypoint": "../index.js"
 	},
-	"manufacturer": "Generic",
+	"manufacturer": "BrightLink",
 	"products": [
-		"HTTP Requests"
+		"BL-8X8-HDBT-HD20"
 	],
 	"keywords": [
-		"Protocol",
-		"Generic"
+		"BrightLink",
+		"HDMI",
+		"Matrix"
 	]
 }

@@ -2,3 +2,6 @@
 /pkg
 /*.tgz
 /.yarn
+
+# This project uses yarn; an npm lockfile here would compete with yarn.lock
+/package-lock.json

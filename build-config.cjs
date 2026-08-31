@@ -1,3 +1,1 @@
-module.exports = {
-  prebuilds: ["@julusian/image-rs"],
-};
+module.exports = {}

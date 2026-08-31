@@ -1,24 +1,32 @@
 {
-	"name": "generic-http",
-	"version": "2.5.0",
+	"name": "brightlink-bl_8x8_hdbt_hd20",
+	"version": "2.6.0",
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"package": "companion-module-build",
+		"lint:raw": "eslint",
+		"lint": "yarn lint:raw ."
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/bitfocus/companion-module-generic-http.git"
+		"url": "git+https://github.com/bitfocus/companion-module-brightlink-bl_8x8_hdbt_hd20.git"
 	},
 	"license": "MIT",
+	"engines": {
+		"node": ">=22"
+	},
 	"dependencies": {
-		"@companion-module/base": "~1.11.3",
-		"@julusian/image-rs": "^2.0.1",
-		"got": "^14.4.7",
-		"hpagent": "^1.2.0"
+		"@companion-module/base": "~2.0.4",
+		"got": "^14.4.7"
 	},
 	"devDependencies": {
-		"@companion-module/tools": "^2.3.0"
+		"@companion-module/tools": "^3.1.0",
+		"eslint": "^9.35.0",
+		"prettier": "^3.8.3",
+		"typescript-eslint": "^8.42.0"
 	},
+	"prettier": "@companion-module/tools/.prettierrc.json",
 	"packageManager": "yarn@4.9.1"
 }
