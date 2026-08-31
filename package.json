@@ -1,5 +1,5 @@
 {
-	"name": "brightlink-bl_8x8_hdbt_hd20",
+	"name": "brightlink-bl-8x8-hdbt-hd20",
 	"version": "2.6.0",
 	"main": "index.js",
 	"type": "module",
@@ -11,7 +11,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/bitfocus/companion-module-brightlink-bl_8x8_hdbt_hd20.git"
+		"url": "git+https://github.com/ntbutler87/companion-module-brightlink-bl-8x8-hdbt-hd20.git"
 	},
 	"license": "MIT",
 	"engines": {

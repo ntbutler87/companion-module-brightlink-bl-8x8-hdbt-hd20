@@ -652,9 +652,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"brightlink-bl_8x8_hdbt_hd20@workspace:.":
+"brightlink-bl-8x8-hdbt-hd20@workspace:.":
   version: 0.0.0-use.local
-  resolution: "brightlink-bl_8x8_hdbt_hd20@workspace:."
+  resolution: "brightlink-bl-8x8-hdbt-hd20@workspace:."
   dependencies:
     "@companion-module/base": "npm:~2.0.4"
     "@companion-module/tools": "npm:^3.1.0"

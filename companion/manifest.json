@@ -1,21 +1,21 @@
 {
 	"$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
 	"type": "connection",
-	"id": "brightlink-bl_8x8_hdbt_hd20",
-	"name": "brightlink-bl_8x8_hdbt_hd20",
+	"id": "brightlink-bl-8x8-hdbt-hd20",
+	"name": "brightlink-bl-8x8-hdbt-hd20",
 	"shortname": "brightlink",
 	"description": "Control the BrightLink BL-8X8-HDBT-HD20 HDMI Matrix switcher over IP",
 	"version": "1.0.0",
 	"license": "MIT",
-	"repository": "git+https://github.com/bitfocus/companion-module-brightlink-bl_8x8_hdbt_hd20.git",
-	"bugs": "https://github.com/bitfocus/companion-module-brightlink-bl_8x8_hdbt_hd20/issues",
+	"repository": "git+https://github.com/ntbutler87/companion-module-brightlink-bl-8x8-hdbt-hd20.git",
+	"bugs": "https://github.com/ntbutler87/companion-module-brightlink-bl-8x8-hdbt-hd20/issues",
 	"maintainers": [
 		{
 			"name": "Nathan Butler",
 			"email": "nbutlerimax@gmail.com"
 		}
 	],
-	"legacyIds": [],
+	"legacyIds": ["brightlink-bl_8x8_hdbt_hd20"],
 	"runtime": {
 		"type": "node22",
 		"api": "nodejs-ipc",

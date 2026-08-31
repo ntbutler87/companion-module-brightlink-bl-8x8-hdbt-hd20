@@ -59,4 +59,6 @@ Getting these wrong produces a panel that reports nothing connected while pictur
 
 ## Repo state
 
-`git remote origin` still points at `bitfocus/companion-module-generic-http`, the module this was forked from. The repository URL declared in package.json and the manifest (`bitfocus/companion-module-brightlink-bl_8x8_hdbt_hd20`) does not exist yet — it is the intended destination, not a live remote.
+`origin` is `ntbutler87/companion-module-brightlink-bl-8x8-hdbt-hd20`, where this lives until it is submitted to Bitfocus. `upstream` is `bitfocus/companion-module-generic-http`, the module this was forked from — the first 102 commits are its history.
+
+**The module id must not contain underscores.** `toSanitizedDirname` in `@companion-module/tools` rewrites anything outside `[a-zA-Z0-9-.]` to `-` when naming the `pkg/<id>/` staging directory, while the Bitfocus CI derives the path it expects from the GitHub repo name verbatim. An id of `brightlink-bl_8x8_hdbt_hd20` makes those two disagree and the packaging check fails with `MODULE_NOT_FOUND`. The manifest id, the package.json name and the repo name must all match, hyphens only. The old underscore id is kept in `legacyIds` so existing installs still resolve.
