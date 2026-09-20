@@ -14,7 +14,13 @@ export const normaliseAddress = (address) => {
  */
 export const statusUrl = (baseUrl, now = Date.now()) => `${baseUrl}/all_dat.get${now}`
 
-/** Commands are `#`-prefixed and concatenated with no separator between them. */
+/**
+ * Commands are `#`-prefixed and concatenated with no separator between them.
+ *
+ * The leading `#` is required by the hardware, not decoration: a body without it
+ * is answered with an empty 200 and silently ignored (API_SPEC.md §2.1). Every
+ * command in a batch carries its own, so a batch is `#a#b`, never `a#b`.
+ */
 export const commandBody = (commands) => commands.map((command) => `#${command}`).join('')
 
 export async function fetchStatus(baseUrl) {

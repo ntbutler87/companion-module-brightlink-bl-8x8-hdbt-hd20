@@ -84,7 +84,11 @@ other separator:
 
 * Fields within a command are separated by **single spaces**.
 * Arguments are `key=value`, except the leading command token and its target.
-* The leading `#` on the first command is conventional; parsers should tolerate its absence.
+* The leading `#` on the first command is **required by the hardware**, not conventional.
+  Verified on a live unit: `video_d out1 matrix=5` returns `200` and changes nothing, while
+  `#video_d out1 matrix=5` routes the output. Since there is no error channel (§1.3), a
+  missing `#` looks exactly like success. A batch is therefore `#a#b`, never `a#b`.
+  The emulator in BLMatrixServer tolerates its absence; do not rely on that.
 * Values are decimal, 1-based, and never zero-padded (`out8`, not `out08`).
 * Port names are the only free-text values — they may contain spaces (§2.6).
 
