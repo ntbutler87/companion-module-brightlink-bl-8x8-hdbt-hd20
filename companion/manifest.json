@@ -7,8 +7,8 @@
 	"description": "Control the BrightLink BL-8X8-HDBT-HD20 HDMI Matrix switcher over IP",
 	"version": "1.0.0",
 	"license": "MIT",
-	"repository": "git+https://github.com/ntbutler87/companion-module-brightlink-bl-8x8-hdbt-hd20.git",
-	"bugs": "https://github.com/ntbutler87/companion-module-brightlink-bl-8x8-hdbt-hd20/issues",
+	"repository": "git+https://github.com/bitfocus/companion-module-brightlink-bl-8x8-hdbt-hd20",
+	"bugs": "https://github.com/bitfocus/companion-module-brightlink-bl-8x8-hdbt-hd20/issues",
 	"maintainers": [
 		{
 			"name": "Nathan Butler",
